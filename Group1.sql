@@ -277,9 +277,7 @@ CREATE TABLE Users (
     Password VARCHAR(255) NOT NULL,
     Email VARCHAR(255) NOT NULL UNIQUE,
     RoleID INT NOT NULL,
-    CreatedAtDate DATE,
 	CreatedAtTime TIME,
-    UpdatedAtDate DATE,
     UpdatedAtTime TIME,
     FOREIGN KEY (RoleID) REFERENCES Roles(RoleID)
 );
