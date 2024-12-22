@@ -458,9 +458,7 @@ CREATE TABLE RealTimeOrders (
     ProductID INT NOT NULL,
     Quantity INT NOT NULL,
     OrderStatusID INT,
-    CreatedAtDate DATE,
     CreatedAtTime TIME,
-    UpdatedAtDate DATE,
     UpdatedAtTime TIME,
     FOREIGN KEY (ProductID) REFERENCES RealTimeInventory(ProductID),
     FOREIGN KEY (OrderStatusID) REFERENCES OrderStatuses(OrderStatusID)
